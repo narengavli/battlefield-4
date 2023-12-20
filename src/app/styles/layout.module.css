@@ -1,0 +1,62 @@
+.body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.bgImageBox {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.9;
+    background: #000C13;
+}
+
+.bgImage {
+    filter: blur(10px);
+
+}
+
+.mainScreen {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.leftScreen {
+    height: 100%;
+    width: 60px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.rightScreen {
+    height: 100%;
+    width: 60px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.centerScreen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.topScreen {
+    height: 60px;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .leftScreen,
+    .rightScreen {
+        display: none;
+    }
+}

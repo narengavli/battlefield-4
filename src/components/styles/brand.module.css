@@ -1,0 +1,11 @@
+.brandRing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: rgb(255, 221, 0) rgb(255, 221, 0) rgb(255, 221, 0) rgba(234, 231, 231, 0.86);
+}
