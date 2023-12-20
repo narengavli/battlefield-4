@@ -1,0 +1,29 @@
+.pointItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pointItem:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pointTitle {
+    display: flex;
+    align-items: center;
+}
+
+.pointInfoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pointInfo {
+    text-align: right;
+}
+
+.pointBar {
+    width: 80px;
+}

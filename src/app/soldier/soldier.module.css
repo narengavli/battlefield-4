@@ -1,0 +1,93 @@
+/* General Layout */
+.page {
+    display: flex;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 10px;
+}
+
+.col2 {
+    width: 80%;
+    padding: 10px;
+}
+
+/* Rows */
+.row1,
+.row2 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Point List and Scores */
+.pointList {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.scores {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Brand Logo and Cookie Info */
+.brandLogo {
+    margin-right: 10px;
+}
+
+.cookieInfoBox {
+    display: flex;
+}
+
+.levelProgress {
+    border: 1px solid white;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.rankBox {
+    word-wrap: break-word;
+}
+
+/* Highlights */
+.highlightsBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .col1 {
+        width: 30%;
+    }
+
+    .col2 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .col1,
+    .col2 {
+        width: 100%;
+    }
+
+    .row2 {
+        flex-direction: column;
+    }
+
+    .pointList,
+    .scores {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
